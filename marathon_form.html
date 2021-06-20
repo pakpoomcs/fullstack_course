@@ -13,7 +13,7 @@
         <h1>Race Registration!</h1>
     </div>
     <div>
-        <form action="">
+        <form action="/form">
             <div>
                 <label for="name">First Name</label>
                 <input type="text" id="name" name="name">
@@ -26,18 +26,18 @@
                 </p>
                 <p>
                     <input type="radio" name="race" id="fun_run_5k" value="fun_run_5k">
-                    <label for="race">Fun Run 5k</label><br>
+                    <label for="fun_run_5k">Fun Run 5k</label><br>
                     <input type="radio" name="race" id="half_marathon" value="half_marathon">
-                    <label for="race">Half Marathon</label><br>
+                    <label for="half_marathon">Half Marathon</label><br>
                     <input type="radio" name="race" id="full_marathon" value="full_marathon">
-                    <label for="race">Full Marathon</label>
+                    <label for="full_marathon">Full Marathon</label>
                 </p>
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="email" required>
+                <input type="email" name="email" id="email" required>
                 <label for="password">Password</label>
-                <input type="password" required>
+                <input type="password" name="password" id="password" required>
             </div>
             <div>
                 <label for="age_group">Select Age Group</label>
@@ -55,3 +55,4 @@
     </div>
 </body>
 </html>
+http://127.0.0.1:5500/form?name=Pakp&lastname=Suntg&race=fun_run_5k&email=pakp%40d&password=f134&age_group=18-24

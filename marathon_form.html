@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration Form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Race Registration!</h1>
+    </div>
+    <div>
+        <form action="">
+            <div>
+                <label for="name">First Name</label>
+                <input type="text" id="name" name="name">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            <div>
+                <p>
+                    <label for="race">Select a Race:</label><br>
+                </p>
+                <p>
+                    <input type="radio" name="race" id="fun_run_5k" value="fun_run_5k">
+                    <label for="race">Fun Run 5k</label><br>
+                    <input type="radio" name="race" id="half_marathon" value="half_marathon">
+                    <label for="race">Half Marathon</label><br>
+                    <input type="radio" name="race" id="full_marathon" value="full_marathon">
+                    <label for="race">Full Marathon</label>
+                </p>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" required>
+                <label for="password">Password</label>
+                <input type="password" required>
+            </div>
+            <div>
+                <label for="age_group">Select Age Group</label>
+                <select name="age_group" id="age_group">
+                    <option value="">-- Select Age Group --</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-45">35-45</option>
+                </select>
+            </div>
+            <div>
+                <button>Register!</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

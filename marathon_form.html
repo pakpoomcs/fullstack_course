@@ -16,9 +16,9 @@
         <form action="/form">
             <div>
                 <label for="name">First Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <input type="text" id="lastname" name="lastname" required>
             </div>
             <div>
                 <p>
@@ -43,9 +43,11 @@
                 <label for="age_group">Select Age Group</label>
                 <select name="age_group" id="age_group">
                     <option value="">-- Select Age Group --</option>
-                    <option value="18-24">18-24</option>
-                    <option value="25-34">25-34</option>
-                    <option value="35-45">35-45</option>
+                    <option value="kid">under 18</option>
+                    <option value="young_adult">18-30</option>
+                    <option value="adult">30-40</option>
+                    <option value="middle_aged">40-50</option>
+                    <option value="elderly">50+</option>
                 </select>
             </div>
             <div>
@@ -55,4 +57,3 @@
     </div>
 </body>
 </html>
-http://127.0.0.1:5500/form?name=Pakp&lastname=Suntg&race=fun_run_5k&email=pakp%40d&password=f134&age_group=18-24

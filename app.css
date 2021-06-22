@@ -20,4 +20,25 @@ p {
     color: white;
     font-weight: bolder;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+    text-decoration: underline;
+}
+a:active{
+    color:violet;
+}
 
+button:hover{
+    background-color: thistle;
+    /* wont work with #register as ID rules over :hover */
+}
+button:active{
+    background-color: yellow;
+}
+
+.daform button:hover{
+    background-color: wheat;
+}

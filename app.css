@@ -48,3 +48,24 @@ button:active{
 .daform button:hover{
     background-color: wheat;
 }
+
+.loremdiv{
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    margin: 20px;
+    background-color: aqua;
+    padding: 5px;
+    border: 10px;
+    border-radius: 20%;
+    border-style: dashed groove none dotted;
+    border-left-color: blueviolet;
+    border-right-width: 20px;
+    box-sizing: border-box;
+}
+
+.loremdiv2 {
+    border: medium green groove;
+    border-left-style:dashed;
+    border-bottom-right-radius: 50%;
+}

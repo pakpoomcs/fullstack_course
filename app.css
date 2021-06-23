@@ -49,6 +49,7 @@ button:active{
     background-color: wheat;
 }
 
+/* box model chapter 85 */
 .loremdiv{
     text-align: center;
     width: 500px;
@@ -68,4 +69,18 @@ button:active{
     border: medium green groove;
     border-left-style:dashed;
     border-bottom-right-radius: 50%;
+}
+
+nav {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    border-bottom:2px #fccccc solid;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1.2em;
+}
+
+#padme{
+    padding: 5px 1px 0 20px;
+    /* top right bottom left */
 }

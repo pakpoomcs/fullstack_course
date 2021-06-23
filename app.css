@@ -12,7 +12,13 @@ h1{
     text-decoration: yellow underline wavy;
 }
 
-p {
+p::selection {
+    color: tan;
+    background-color: darkseagreen;
+}
+
+p:hover{
+    color: red;
 }
 
 #register{

@@ -2,10 +2,10 @@ button {
     background-color: azure;
 }
 
-h1{
-    color:white;
+h1 {
+    color: white;
     background-color: rgb(95, 44, 44);
-    text-align:center;
+    text-align: center;
     font-weight: normal;
     font-size: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,40 +17,46 @@ p::selection {
     background-color: darkseagreen;
 }
 
-p:hover{
+p:hover {
     color: red;
 }
 
-#register{
-    background-color:tomato;
+#register {
+    background-color: tomato;
     color: white;
     font-weight: bolder;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:hover{
-    color:red;
+
+a:hover {
+    color: red;
     text-decoration: underline;
 }
-a:active{
-    color:violet;
+
+a:active {
+    color: violet;
 }
 
-button:hover{
+button:hover {
     background-color: thistle;
     /* wont work with #register as ID rules over :hover */
 }
-button:active{
+
+button:active {
     background-color: yellow;
 }
 
-.daform button:hover{
+.daform button:hover {
     background-color: wheat;
 }
 
+
 /* box model chapter 85 */
-.loremdiv{
+
+.loremdiv {
     text-align: center;
     width: 500px;
     height: 150px;
@@ -67,20 +73,30 @@ button:active{
 
 .loremdiv2 {
     border: medium green groove;
-    border-left-style:dashed;
+    border-left-style: dashed;
     border-bottom-right-radius: 50%;
 }
 
 nav {
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
-    border-bottom:2px #fccccc solid;
+    border-bottom: 2px #fccccc solid;
     width: 30%;
     margin-left: calc(10%/6);
     padding: 1.2em;
 }
 
-#padme{
+#padme {
     padding: 5px 1px 0 20px;
     /* top right bottom left */
+}
+
+span {
+    padding: 20px;
+}
+
+.divinline {
+    display: inline;
+    border-color: black;
+    border-width: 2px;
 }

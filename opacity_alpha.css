@@ -1,4 +1,4 @@
-section {
+#op {
     width: 500px;
     height: 500px;
     background-color: magenta;
@@ -17,4 +17,40 @@ section {
     background-color: yellow;
     opacity: 0.5;
     /* affect teh entire element */
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    border: 2px solid pink;
+    display: inline-block;
+}
+
+#middle {
+    background-color: indianred;
+}
+
+#static #middle {
+    position: static;
+    top: 100px;
+    /* position cant be changed when the element position is static */
+}
+
+#relative #middle {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    /* this one can be moved to the position relatively to WHERE IT WOULD BE */
+}
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    background-color: lemonchiffon;
+    position: absolute;
+    top: 100 px;
+    left: 50px;
 }

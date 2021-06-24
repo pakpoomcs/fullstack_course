@@ -19,11 +19,34 @@ body {
     display: inline;
 }
 
-ul>li {
+nav {
+    color: salmon;
+    font-size: 1rem;
     font-weight: lighter;
-    color: rgb(255, 149, 79);
     font-family: 'Quicksand', sans-serif;
     display: inline-block;
+}
+
+.listitem {
+    margin: 5px;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+    bottom: 0px;
+    font-weight: normal;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.listitem:hover {
+    font-weight: lighter;
+    color: rgb(219, 90, 4);
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+    bottom: 5px;
+    font-weight: bold;
 }
 
 ul>li>a {

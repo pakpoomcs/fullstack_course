@@ -47,6 +47,8 @@ nav ul li {
     display: inline-block;
     bottom: 5px;
     font-weight: bold;
+    transform: scale(1.5) rotate(-15deg);
+    /* transform!! */
 }
 
 ul>li>a {

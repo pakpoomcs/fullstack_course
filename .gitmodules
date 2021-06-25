@@ -1,0 +1,3 @@
+[submodule "fullstack_course"]
+	path = fullstack_course
+	url = http://github.com/pakpoomcs/fullstack_course.git

@@ -1,0 +1,17 @@
+body {
+    margin: 0 ;
+}
+
+#title {
+    font-family: 'Castoro', serif;
+    font-weight: lighter;
+}
+
+div {
+    display: inline;
+}
+
+#tile {
+    display: flex;
+    width:10%;
+}

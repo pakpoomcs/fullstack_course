@@ -1,17 +1,143 @@
+body:lang(en) {
+    font-family: 'Itim', cursive;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+
+body:lang(th-TH) {}
+
 body {
-    margin: 0 ;
-}
-
-#title {
-    font-family: 'Castoro', serif;
-    font-weight: lighter;
-}
-
-div {
-    display: inline;
-}
-
-#tile {
+    margin: 0;
     display: flex;
-    width:10%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+nav h2 {
+    font-size: small;
+    text-align: start;
+    color: salmon;
+    margin: 5px 3px;
+    padding: 0 3%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav h2:last-child {
+    margin-bottom: 10px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+img {
+    display: inline;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5px 0;
+}
+
+@media (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+    }
+    nav h2 {
+        font-size: 1em;
+    }
+    section {
+        width: 95%;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    img {
+        max-width: 960px;
+        width: 20%;
+        transition: all 0.3s;
+        object-fit: cover;
+    }
+    img:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    img:last-child {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    img:hover {
+        transform: scale(1.5);
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    img:active {
+        transform: translateY(0.25em));
+    }
+    .firsttext {
+        width: 95%;
+        display: flex;
+        margin: 10px 0;
+        border: 2px red dotted;
+        padding: 1px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .greeting {
+        padding: 1%;
+        border: 1px black solid;
+    }
+    .greeting h2 {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .side {
+        border: 1px black solid;
+        padding: 1%;
+        width: 100%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .side h2 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .side ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .side li {
+        color: white;
+        width: 80%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        background-color: salmon;
+        border-radius: 10px;
+        margin: 3px 0;
+        padding: 3%;
+        display: inline;
+    }
 }

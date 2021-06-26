@@ -12,32 +12,58 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4150035014005602) 0%, rgba(255, 247, 246, 0.3337710084033614) 38%, rgba(255, 216, 212, 0.5858718487394958) 100%);
 }
 
 header {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    margin: 5px 0;
+}
+
+header h1 {
+    margin: 5% 0;
 }
 
 nav {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 1.5rem;
+    flex-basis: inherit;
+    flex-grow: 1;
+    margin-bottom: 2%;
 }
 
-nav h2 {
-    font-size: small;
-    text-align: start;
-    color: salmon;
-    margin: 5px 3px;
-    padding: 0 3%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+nav div {
+    min-width: 70px;
+    width: 15%;
+    height: auto;
+    background-color: salmon;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-bottom: 1px rgba(255, 235, 233, 0.542) solid;
+    border-radius: 15px;
+    margin: 1% 2%;
+    box-sizing: border-box;
+    padding: 0.5%;
+}
+
+nav div:nth-of-type(3) {
+    min-width: 150px;
+}
+
+nav div:hover {
+    background-color: rgb(255, 164, 154);
+    cursor: pointer;
+}
+
+nav div:active {
+    background-color: rgba(255, 164, 154, 0.405);
 }
 
 nav h2:last-child {
@@ -51,6 +77,22 @@ section {
     flex-wrap: wrap;
 }
 
+.firsttext {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting h2 {
+    color: salmon;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.greeting {
+    margin-bottom: 2%;
+}
+
 img {
     display: inline;
     width: 100%;
@@ -58,12 +100,65 @@ img {
     padding: 0.5px 0;
 }
 
+.side h2 {
+    color: salmon;
+}
+
+.side ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.side ul div {
+    background-color: #fa8072;
+    border-radius: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 3px 5px;
+    padding: 1% 2%;
+    color: white;
+}
+
+.side ul div:hover {
+    background-color: rgb(255, 164, 154);
+    cursor: pointer;
+}
+
+.side ul div:active {
+    background-color: rgba(255, 164, 154, 0.405);
+}
+
+.footer {
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    color: white;
+    background-color: salmon;
+    text-align: right;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+
+/* Next part is for >1024px wide screen */
+
 @media (min-width: 1024px) {
     nav {
+        max-width: 60%;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    nav h2 {
+    nav div {
         font-size: 1em;
+        width: auto;
+        border-radius: 15px;
+        margin: 3% auto;
+        box-sizing: border-box;
+        padding: 0.5% 3%
     }
     section {
         width: 95%;
@@ -71,6 +166,7 @@ img {
         justify-content: center;
         align-content: center;
         flex-wrap: wrap;
+        margin-bottom: 3%;
     }
     img {
         max-width: 960px;
@@ -92,52 +188,81 @@ img {
         border-radius: 20px;
     }
     img:active {
-        transform: translateY(0.25em));
+        transform: translateY(0.25eem));
     }
     .firsttext {
         width: 95%;
         display: flex;
         margin: 10px 0;
-        border: 2px red dotted;
         padding: 1px;
         flex-direction: row;
         justify-content: space-between;
     }
     .greeting {
         padding: 1%;
-        border: 1px black solid;
     }
     .greeting h2 {
         font-size: 2rem;
         font-weight: bolder;
     }
-    .side {
-        border: 1px black solid;
+    div.side {
         padding: 1%;
         width: 100%;
         margin-left: 5%;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
     }
     .side h2 {
         margin-bottom: 0;
         text-align: center;
     }
-    .side ul {
+    ul.side {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-    .side li {
+    ul.side div {
         color: white;
-        width: 80%;
         text-align: center;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
         background-color: salmon;
         border-radius: 10px;
         margin: 3px 0;
+        margin-left: 17.5%;
         padding: 3%;
         display: inline;
+        transition: all 0.1s linear;
+    }
+    .side ul div:first-child {
+        width: 45px;
+    }
+    .side ul div:nth-of-type(3) {
+        width: 30px;
+        ;
+    }
+    .side ul div:nth-of-type(4) {
+        width: 70px;
+        ;
+    }
+    .side ul div:last-child {
+        width: 70px;
+        ;
+    }
+    .side ul div:hover {
+        background-color: rgb(255, 164, 154);
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+    .side ul div:active {
+        background-color: rgba(255, 164, 154, 0.405);
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
     }
 }
